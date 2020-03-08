@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 background Image Animation Tutorial</title>
+    <style>
+		/* Please Share the videos of this channel and subscribe for more videos */
+	
+	
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .wrapper{
+            width: calc(1440px / 5);
+            height: 605px;
+            background: url("4.png");
+            animation: img-animation 1s steps(5) infinite;
+        }
+        @keyframes img-animation {
+            from{
+                background-position: 0;
+            }
+            to{
+                background-position: -1440px;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="wrapper"></div>
+</body>
+</html>
